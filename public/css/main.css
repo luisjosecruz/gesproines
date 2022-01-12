@@ -219,7 +219,7 @@ a{
     width: 100%;
     height: 400px;
     margin-top: 0!important;
-    background: rgba(0,0,0,0.5) url('../img/05.jpg') no-repeat;
+    background: rgba(0,0,0,0.5) url('../img/06.jpg') no-repeat;
     background-position: center center;
     background-blend-mode: overlay;
     background-attachment: fixed;
@@ -541,7 +541,7 @@ a{
 }
 .footer__logo{
     width: 100%;
-    height: 115px;
+    height: 120px;
     background: #fff;
     display: flex;
     align-items: center;
@@ -549,6 +549,7 @@ a{
 }
 .footer__logo img{
     height: 100%;
+    margin-bottom: 15px;
 }
 .footer__menu, .footer__text, .footer__footer{
     display: flex;
@@ -594,7 +595,7 @@ a{
 
 
 .container-contact{
-    background: #f4f7fb;
+    background: #ffffff;
     padding: 10em 0;
     margin-bottom: 0!important;
 }
@@ -637,7 +638,7 @@ a{
 .cel{
     color: #63667f;
 }
-
+/*
 .slide-end{
     margin: 0!important;
 }
@@ -673,6 +674,34 @@ a{
     height: 400px;
     object-fit: cover;
 }
+*/
+
+.container .slide-end {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 5px; 
+}
+
+#slidy{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation: slide-infinito 60s linear infinite alternate;
+}
+
+.slide-end figure img {
+    display: inline-block;
+    width: 500px;
+}
+
+@keyframes slide-infinito {
+    from { left: 0px; }
+    to { left: -7400px; }
+}
+
 
 /* Slider Pre-footer */
 #slider{
@@ -732,6 +761,44 @@ a.control_next {
   border-radius: 2px 0 0 2px;
 }
 
+/* Our Partners*/
+.container-clients{
+    background: #f4f7fb;
+    padding: 10em 0;
+    margin-bottom: 0!important;
+}
+
+.container-clients .services-header .services-title {
+    padding: 0 0 10px 0;
+}
+
+.container-clients .services-header {
+    margin: 0 0 5em;
+}
+
+
+.clients {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clients img {
+    width: 200px;
+    padding: 10px;
+    margin: 15px;
+    transition: filter .5s;
+}
+
+.clients img:hover {
+    filter: saturate(1.5);
+}
+
+.clients img:last-child {
+    padding-left: 0;
+}
 
 /* -----------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------

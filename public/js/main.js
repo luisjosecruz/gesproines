@@ -90,5 +90,5 @@ $(document).ready(function () {
 
     $('a.control_prev').click(() => moveLeft() );
     $('a.control_next').click(() => moveRight() );
-
+    
 });    
