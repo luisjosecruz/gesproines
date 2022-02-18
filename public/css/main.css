@@ -614,6 +614,12 @@ a{
     border-radius: 5px;
     height: 360px;
     width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-map img {
+    width: 100%;
 }
 .contact_item{
     margin: 0 0 1em 5em;
